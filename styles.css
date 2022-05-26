@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Raleway&family=Rubik:ital@1&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Rubik;
+  font-family: Relaway, Rubik;
 
 
 }
@@ -70,6 +71,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #b0b6bf;
+  
 }
 
 .social-media {
@@ -110,4 +112,8 @@ h2 {
   background-color: #45567d;
   text-align: center;
   padding: 10rem 2rem;
+}
+
+.projects h2 {
+  font-size: 40px;
 }

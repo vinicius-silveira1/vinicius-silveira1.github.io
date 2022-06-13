@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="app.js"></script>
     <title>Portfólio</title>
   </head>
   <body>
 
-      <div class="header">
-        <a class="active" href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
+    <div class="header">
 
+        <img src="letra-v.png" class="logo">
+
+
+        <a href="#welcome">Home</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contato">Contato</a>
+        <img src="sun.png" id="icon" >
+
+
+    </div>
+
+
+    <section class="welcome" id="welcome">
+
+      <h1>Olá, eu sou <span class="color">Vinícius Silveira</span></h1>
+
+      <h2>Front-End Web Developer</h2>
+
+      <img src="pvJsXPUlN.png">
+
+    </section>
+    <section class="projects" id="projects">
+      <h2>Meus Projetos!</h2>
+      <div class="projects-grid">
+        <a href="file:///C:/Users/Vin%C3%ADcius/Desktop/calculadora/index.html" class="project calc" target="_blank"></a>
+        <a href="file:///C:/Users/Vin%C3%ADcius/Desktop/minha%20cidade/index.html" class="project city" target="_blank"></a>
+        <a href="file:///C:/Users/Vin%C3%ADcius/Desktop/tabela%20nutricional/index.html" class="project table" target="_blank"></a>
+        <!-- <a href="#" class="project">D</a>
+        <a href="#" class="project">E</a>
+        <a href="#" class="project">F</a> -->
       </div>
 
 
-    <section class="welcome">
 
-      <h1>Vinícius Silveira</h1>
-      <h2>Front End Developer</h2>
-      <div class="social-media">
-        <a href="#">Linkedin</a>
-        <a href="#">GitHub</a>
-
-
-      </div>
     </section>
-    <section class="projects">
-      <h2 class="projects-header">Meus Projetos!</h2>
+    <section class="contato" id="contato">
+      <nav class="social-media nav">
 
+
+
+      </nav>
 
 
     </section>
@@ -37,9 +59,32 @@
 
 
 
-    <main class="container"></main>
+
     <footer class="footer"></footer>
 
 
   </body>
+
+  <script>
+
+
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function() {
+    document.body.classList.toggle("light-mode");
+    if(document.body.classList.contains("light-mode")) {
+      icon.src = "moon.png";
+    } else {
+      icon.src = "sun.png"
+    }
+  }
+
+
+
+
+
+
+  </script>
+
+
 </html>
